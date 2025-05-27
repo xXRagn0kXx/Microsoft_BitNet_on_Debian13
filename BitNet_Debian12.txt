@@ -29,7 +29,7 @@ Nos mostrara todos los paquetes a descargar e instalar, confirmamos con "y"
 conda activate miniconda-bitnet-p3_9
 
 Nos cambiara el promp de la terminal  con el nombre de miniconda-bitnet-p3_9
-
+NOTA: ESTO SERA NECESARIO CADA VEZ QUE QUERRAMOS EJEUTAR EL MODELO
 
 4 Descargar Bitnet 
 git clone --recursive https://github.com/microsoft/BitNet.git
