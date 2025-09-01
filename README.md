@@ -1,3 +1,3 @@
-# BitNet_On_Debian12
+# BitNet_On_Debian13
 
 ![Portada de BitNet_Debian](BitNet_Debian.png)
