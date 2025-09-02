@@ -170,7 +170,11 @@ export CXX=/usr/bin/clang++-19
 Dentro de la ruta /home/usuario/BitNet ejecutamos: 
 
 Descargar modelo:
-huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+# Este comando ya esta deprecado, seria para versiones antiguas:
+# huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+Actual:
+hf download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+
 
 Compilar el modelo con cuantizacion I2_S(RAM recomendada 4–6 GB):
 python setup_env.py -md models/BitNet-b1.58-2B-4T -q i2_s
@@ -185,6 +189,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
