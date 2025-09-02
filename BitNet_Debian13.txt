@@ -119,19 +119,39 @@ The following NEW packages will be INSTALLED:
 Proceed ([y]/n)?
 #######################################################################################################
 
+Una vez instalado nos dara lagunas instruciones para activar o desactivar la shell de conda:
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate miniconda-bitnet-p3_9
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
 4.1 Activar conda
+
 conda activate miniconda-bitnet-p3_9
 
 Nos cambiara el promp de la terminal  con el nombre de miniconda-bitnet-p3_9
 NOTA: ESTO SERA NECESARIO CADA VEZ QUE QUERRAMOS EJEUTAR EL MODELO
+Ej:
+(base) bitnet@BitNet:~$ conda activate miniconda-bitnet-p3_9
+(miniconda-bitnet-p3_9) bitnet@BitNet:~$
 
 5 Descargar Bitnet 
 git clone --recursive https://github.com/microsoft/BitNet.git
 
-Entramos al directorio: 
+Entramos al directorio nuevo generado: 
 cd BitNet
 
-6 Instalar dependencias de python 
+6 Instalar dependencias de python para el modelo:
 
 pip install -r requirements.txt
 
@@ -165,6 +185,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
