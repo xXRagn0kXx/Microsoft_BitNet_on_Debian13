@@ -59,6 +59,13 @@ Thank you for installing Miniconda3!
 
 4 Crear un entorno conda para BitNet
 
+Activamos la shell de conda si no lo esta:
+source ~/miniconda3/bin/activate
+
+Se quedara algo como:
+(base) bitnet@BitNet:~$ 
+
+Creamos el entorno en esa shell:
 conda create -n miniconda-bitnet-p3_9 python=3.9
 Nos mostrara todos los paquetes a descargar e instalar, confirmamos con "y"
 
@@ -107,6 +114,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
