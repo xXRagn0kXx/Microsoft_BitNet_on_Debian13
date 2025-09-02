@@ -36,6 +36,27 @@ Si elijes "No" puedes activarlo manualmente solo cuando lo necesites, usando:
 
 source ~/miniconda3/bin/activate
 
+Para que los cambios hagan efecto si hemos elejido YES bastara con salir y entrar de la shell.
+
+You can undo this by running `conda init --reverse $SHELL`? [yes|no]
+[no] >>> yes
+no change     /home/bitnet/miniconda3/condabin/conda
+no change     /home/bitnet/miniconda3/bin/conda
+no change     /home/bitnet/miniconda3/bin/conda-env
+no change     /home/bitnet/miniconda3/bin/activate
+no change     /home/bitnet/miniconda3/bin/deactivate
+no change     /home/bitnet/miniconda3/etc/profile.d/conda.sh
+no change     /home/bitnet/miniconda3/etc/fish/conf.d/conda.fish
+no change     /home/bitnet/miniconda3/shell/condabin/Conda.psm1
+no change     /home/bitnet/miniconda3/shell/condabin/conda-hook.ps1
+no change     /home/bitnet/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/bitnet/miniconda3/etc/profile.d/conda.csh
+modified      /home/bitnet/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+Thank you for installing Miniconda3!
+
 4 Crear un entorno conda para BitNet
 
 conda create -n miniconda-bitnet-p3_9 python=3.9
@@ -86,6 +107,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
