@@ -1,6 +1,6 @@
 1 Instalar paquetes previos
 apt update
-apt install lsb-release wget software-properties-common gnupg python3 python3-venv python3-dev python3-pip build-essential cmake clang git curl
+apt install lsb-release wget gnupg python3 python3-venv python3-dev python3-pip build-essential cmake clang git curl
 
 2 BitNet requiere Clang versión 18 o superior para compilar correctamente su núcleo en C++. Debian 13 no trae versiones tan recientes por defecto, así que necesitas obtenerlas desde el repositorio oficial de LLVM.	 
 
@@ -71,4 +71,5 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
