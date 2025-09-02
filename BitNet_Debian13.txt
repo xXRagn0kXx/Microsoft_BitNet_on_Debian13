@@ -14,8 +14,23 @@ Ejecutamos con el usuario bitnet para que miniconda se isntale en /home/bitnet/:
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 
+Tendremos que aceptar el acuerdo de licencia y confirmar el directorio a elejir:
+###########################################################################################################
+Do you accept the license terms? [yes|no]
+>>> yes
+
+Miniconda3 will now be installed into this location:
+/home/bitnet/miniconda3
+
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+
 Nos preguntara si deseamos automatizar el inicio de conda en la shell
 Si respondes "yes", el instalador modificará tu archivo de configuración del shell (como ~/.bashrc, ~/.zshrc, etc.) para que se cargue automáticamente Conda cada vez que abras una terminal.
+#########################################################################################################################
 
 Si elijes "No" puedes activarlo manualmente solo cuando lo necesites, usando:
 
@@ -71,6 +86,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
