@@ -160,7 +160,7 @@ Ahora forzaremos a setup_env.py a usar Clang 19 como compilador en lugar del pre
 ⚠️ Sin esto:
 El script puede usar un compilador incorrecto por defecto (como gcc o clang-14) que no soporta completamente las extensiones modernas de C++ requeridas por BitNet.
 
-En Debian 13, clang-19 no es el compilador predeterminado, aunque lo hayas instalado.
+En Debian 13, clang-19 no es el compilador predeterminado, aunque lo hayas instalado tendremos que ejecutar:
 
 export CC=/usr/bin/clang-19
 export CXX=/usr/bin/clang++-19
@@ -185,6 +185,7 @@ python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -cnv -
 
 Si es TL2
 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-tl2.gguf -cnv -p "lo que le queramos preguntar"
+
 
 
 
