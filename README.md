@@ -191,9 +191,12 @@ export CXX=/usr/bin/clang++-19
 
 Dentro de la ruta /home/usuario/BitNet ejecutamos: 
 
-Descargar modelo:
-# Este comando ya esta deprecado, seria para versiones antiguas:
-# huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+# 7.1 Descargar modelo:
+
+Este comando ya esta deprecado, seria para versiones antiguas:
+```bash
+huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+```
 Actual:
 ```bash
 hf download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
