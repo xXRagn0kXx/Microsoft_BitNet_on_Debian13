@@ -154,7 +154,7 @@ Executing transaction: done
 #
 #     $ conda deactivate
 ```
-4.1 Activar conda
+## 4.1 Activar conda
 
 conda activate miniconda-bitnet-p3_9
 
@@ -165,7 +165,7 @@ Ej:
 (base) bitnet@BitNet:~$ conda activate miniconda-bitnet-p3_9
 (miniconda-bitnet-p3_9) bitnet@BitNet:~$
 ```
-5 Descargar Bitnet 
+# 5 Descargar Bitnet 
 ```bash
 git clone --recursive https://github.com/microsoft/BitNet.git
 ```
@@ -173,7 +173,7 @@ Entramos al directorio nuevo generado:
 ```bash
 cd BitNet
 ```
-6 Instalar dependencias de python para el modelo:
+# 6 Instalar dependencias de python para el modelo:
 ```bash
 pip install -r requirements.txt
 ```
@@ -187,7 +187,7 @@ En Debian 13, clang-19 no es el compilador predeterminado, aunque lo hayas insta
 export CC=/usr/bin/clang-19
 export CXX=/usr/bin/clang++-19
 ```
-7 Bajamos y compilamos el modelo 
+# 7 Bajamos y compilamos el modelo 
 
 Dentro de la ruta /home/usuario/BitNet ejecutamos: 
 
@@ -207,7 +207,7 @@ Compilar el modelo con cuantizacion TL2 (RAM recomendada 10–16 GB):
 ```bash
 python setup_env.py -md models/BitNet-b1.58-2B-4T -q tl2
 ```
-8 Por ultimo ejecutamos el modelo
+# 8 Ejecutar modelo
 
 Si es i2_s
 ```bash
